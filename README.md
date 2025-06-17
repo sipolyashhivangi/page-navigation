@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Page Navigation Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
 
-## Available Scripts
+A dynamic form page navigation system built with **React** and **Tailwind CSS** that enables intuitive page management through drag-and-drop reordering, context menus, and real-time page editing.
 
-In the project directory, you can run:
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-blue?style=for-the-badge)](https://page-navigation-sandy.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✨ Interactive Page Navigation
 
-### `npm test`
+* Clickable tabs for form pages (e.g., "Info", "Details", "Other")
+* Visual indicator for active page
+* Responsive design with horizontal scrolling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🖱️ Context Menu Actions *(Right-click on any page)*
 
-### `npm run build`
+* Rename pages (via browser prompt)
+* Duplicate pages
+* Delete pages
+* Set as first page
+* Placeholder for additional actions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ➕ Dynamic Page Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Add new pages between existing ones via hover "+" buttons
+* Add pages at the end of the list
+* Intuitive drag-and-drop reordering
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Frontend**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [React 18](https://reactjs.org/) with functional components and hooks
+* [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+* [react-dnd](https://react-dnd.github.io/react-dnd/about) for drag-and-drop
+* [react-icons](https://react-icons.github.io/react-icons/) for iconography
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Deployment**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [Vercel](https://vercel.com/) for hosting and continuous deployment
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Prerequisites**
 
-### Code Splitting
+* Node.js (v16 or higher recommended)
+* npm (v8 or higher) or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Setup Instructions**
 
-### Analyzing the Bundle Size
+```bash
+# Clone the repository
+git clone https://github.com/sipolyashhivangi/page-navigation.git
+cd page-navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+npm install
 
-### Making a Progressive Web App
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Then open your browser at:
+[http://localhost:3000](http://localhost:3000)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📜 Available Scripts
 
-### Deployment
+| Command         | Description                             |
+| --------------- | --------------------------------------- |
+| `npm start`     | Runs the app in development mode        |
+| `npm test`      | Launches the test runner                |
+| `npm run build` | Creates a production build              |
+| `npm run eject` | Ejects from Create React App (advanced) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🧾 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+/src
+├── components/         # Reusable components
+│   ├── PageNav/        # Main navigation component
+│   └── ContextMenu/    # Right-click menu component
+├── hooks/              # Custom React hooks
+│   └── usePageState.js # Page state logic
+├── utils/              # Helper functions
+├── App.js              # Main app component
+└── index.js            # App entry point
+```
+
+---
+
+## 🧪 How to Use the Component
+
+### 🔹 Basic Navigation
+
+* Click on any page tab to activate it
+* The active page will be visually highlighted
+
+### 🔹 Adding Pages
+
+* Hover between pages to show the "+" button
+* Click "+" to insert a new page at that position
+* Use the "+" at the end to append a new page
+
+### 🔹 Page Management
+
+* Right-click a page tab to access context menu options
+* Use drag-and-drop to reorder pages as needed
+
+
